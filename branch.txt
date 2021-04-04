@@ -1,0 +1,24 @@
+# A Perforce Branch Specification.
+#
+#  Branch:      The branch name.
+#  Update:      The date this specification was last modified.
+#  Access:      The date of the last 'integrate' using this branch.
+#  Owner:       The user who created this branch.
+#  Description: A short description of the branch (optional).
+#  Options:     Branch update options: [un]locked.
+#  View:        Lines to map source depot files to target depot files.
+#
+# Use 'p4 help branch' to see more about branch views.
+
+Branch:	some_branch
+
+Owner:	perforce
+
+Description:
+	Created by perforce.
+
+Options:	unlocked
+
+View:
+	//depot/project/main/... //depot/project/some_branch/...
+
