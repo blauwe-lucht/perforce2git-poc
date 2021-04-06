@@ -1,7 +1,6 @@
 # perforce2git-poc
 This is a proof of concept of the migration of a Perforce depot to a git repository. It shows how a simple Perforce depot can be migrated
-using [git-p4](https://git-scm.com/docs/git-p4). Note that it will only migrate a single branch (the main branch). I haven't found a way to do this
-for multiple branches in a way that will actually create proper git branches.
+using [git-p4](https://git-scm.com/docs/git-p4). Note that this will import all branches defined with p4 branch that relate to the depot path specified in the 'git p4' command. 
 
 # Prerequisites
 

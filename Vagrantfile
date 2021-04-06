@@ -35,13 +35,13 @@ apt-get install -y python-is-python3
 #
 sudo -u vagrant mkdir /home/vagrant/git
 cd /home/vagrant/git
-sudo -u vagrant git p4 clone //depot/project/main@all
+sudo -u vagrant git p4 clone --detect-branches //depot/project@all
 
 #
 # Show the result
 #
-cd /home/vagrant/git/main
-sudo -u vagrant git log --graph
+cd /home/vagrant/git/project
+sudo -u vagrant git log --graph --branches=* --remotes=*
 SCRIPT
 
 Vagrant.configure("2") do |config|
